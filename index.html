@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="icon" type="image/x-icon" href="./assets/ANP.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="JS/commands.js"></script>
+  <script defer src="JS/main.js"></script>
+  <script defer src="JS/caret.js"></script>
+  <title id="tile">Nanashi's Terminal</title>
+  <link type="text/css" rel="stylesheet" id="currentTheme" href="CSS/cyberspace.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/firacode@6.2.0/distr/fira_code.css">
+  <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+  <div id="title">
+    <!-- TOP BANNER -->
+    <a class="banner-click" href="#">
+<p class="banner"> _______ _______ ______ _________________        _______    _       _______ _______ _______  _______            _______ _______ _               _______ _______ </p>
+<p class="banner">(  ___  |  ___  |  __  \\__   __|__   __/\     /(  ___  )  ( (    /(  ___  |  ____ |  ____ \(  ____ \\     /|  (  ____ |  ___  | (    /|\     /(  ___  |  ____ )</p>
+<p class="banner">| (   ) | (   ) | (  \  )  ) (     ) (  ( \   / ) (   ) |  |  \  ( | (   ) | (    )| (    \/| (    \/ )   ( |  | (    )| (   ) |  \  ( | )   ( | (   ) | (    )|</p>
+<p class="banner">| (___) | (___) | |   ) |  | |     | |   \ (_) /| (___) |  |   \ | | (___) | (____)| (__    | (_____| (___) |  | (____)| (___) |   \ | | | _ | | (___) | (____)|</p>
+<p class="banner">|  ___  |  ___  | |   | |  | |     | |    \   / |  ___  |  | (\ \) |  ___  |     __)  __)   (_____  )  ___  |  |  _____)  ___  | (\ \) | |( )| |  ___  |     __)</p>
+<p class="banner">| (   ) | (   ) | |   ) |  | |     | |     ) (  | (   ) |  | | \   | (   ) | (\ (  | (            ) | (   ) |  | (     | (   ) | | \   | || || | (   ) | (\ (   </p>
+<p class="banner">| )   ( | )   ( | (__/  )__) (___  | |     | |  | )   ( |  | )  \  | )   ( | ) \ \_| (____/\/\____) | )   ( |  | )     | )   ( | )  \  | () () | )   ( | ) \ \__</p>
+<p class="banner">|/     \|/     \(______/\_______/  )_(     \_/  |/     \|  |/    )_)/     \|/   \__(_______/\_______)/     \|  |/      |/     \|/    )_|_______)/     \|/   \__/</p>
+<p class="banner">                                                                     <a href="https://github.com/Nanashi-Trys" target="_blank" >Github</a>|<a href="www.linkedin.com/in/aaditya-naresh-panwar" target="_blank" >LinkedIn</a></p></a>
+    <!-- TOP BANNER -->
+  </div>
+  <div class="container-prop">
+    <div class="container"> 
+      <div id="terminal">
+        <a id="before"></a>
+      </div>
+      <div id="command" onclick="$('texter').focus();">
+        <textarea type="text" id="texter" onkeyup="typeIt(this, event)" onkeydown="typeIt(this, event); 
+                      moveIt(this.value.length, event)" onkeypress="typeIt(this, event);" autofocus=""></textarea>
+        <div id="liner">
+          <span id="typer"></span><b class="cursor" id="cursor" style="left: 0px;">█</b>
+        </div>
+      </div>
+      <div command=""></div>
+    </div>
+  </div>
+  <script src="./JS/main.js"></script>
+  <script></script>
+</body>
+</html>
